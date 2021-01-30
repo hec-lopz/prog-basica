@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dibujando con canvas</title>
+    <style>
+      h1
+        {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 32px
+        }
+      p
+      {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dibujo en canvas</h1>
+    <p>
+      Cuántas lineas quieres?<br>
+      <input type="text" id="texto_lineas" />
+    </p>
+    <p>
+      Qué color quieres?<br><input type="text" id="texto_color" />
+      <input type="button" value="Dibuja!" id="botoncito" />
+    </p>
+    <canvas width="300" height="300" id="dibujito" background="blue"></canvas>
+    <p>Estudiante | Héctor López</p>
+    <script src="dibujo.js"></script>
+  </body>
+</html>

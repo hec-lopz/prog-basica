@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banco de México</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Banco de México</h1> <span>Tu banco de confianza</span>
+    </header>
+    <div class="data">
+      <p>Bienvenido al sistema de transferencias del banco de México.
+      <br />Horario de atención: de 09:00 hr a 12:00 hr y de 15:00 hr a 20:00.
+      </p>
+    </div>
+    <form class="my-form">
+      <div>
+        <p>
+          Por favor ingresa los datos de tu transferencia a continuación:
+        </p>
+      </div>
+      <div class="form-group">
+        <label>Ingrese el banco destino: </label>
+        <input type="text" id="destination_bank" value="">
+      </div>
+      <div class="form-group">
+        <label>Ingrese la cuenta destino: </label>
+        <input type="text" id="destination_acct">
+      </div>
+      <div class="form-group">
+        <label>Ingrese el monto a transferir: </label>
+        <input type="text" id="transfer_amount" value="">
+      </div>
+      <input type="button" id="submit" value="Realizar Transferencia">
+    </form>
+
+    <h2 id="infobox">Información de su transferencia</h2>
+    <div id="cuentas">
+      <h3>Cuenta de Retiro</h3>
+      <p id="inforetiro">
+      </p>
+      <h3>Beneficiario</h3>
+      <p id="infobenef">
+      </p>
+    </div>
+    <div id="informacion">
+      <p>
+        <span id="date">Fecha: </span>
+        <span id="status">Status: </span>
+        <span id="monto">Monto: </span>
+        <span id="comision">Comisión: </span>
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src = "banco.js">
+  </script>
+</body>
+</html>

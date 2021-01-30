@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero Automático</title>
+    <link href="https://fonts.googleapis.com/css?family=Gupter:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <figure class="logo">
+        Banco de México
+      </figure>
+    </header>
+    <section class="balance" >
+      <h1 id='balance_caja'></h1>
+    </section>
+    <section class="atm">
+      <figure class="atm-machine">
+        <img src = "cajero.gif" height="256" id="cajero"/>
+      </figure>
+      <div class="">
+        <p>
+          Introduce la cantidad de dinero que deseas retirar en Dólares, luego da click en "Extraer".
+          <br />Da click en "Limpiar" si deseas hacer otra transacción.<br />
+        </p>
+          <form class="action-buttons">
+            <input  type="text" id="dinero" />
+            <input class="interactive-button" type="button" value="Extraer" id = "extraer"/>
+            <input class="interactive-button" type="button" value="Limpiar" id = "Limpiar"/>
+          </form>
+      </div>
+    </section>
+    <section class="delivered">
+      <p id="resultado">
+      </p>
+      <!-- <figure id='billete-resultado'>
+
+      </figure> -->
+    </section>
+    <script src="billete.js" charset="utf-8"></script>
+    <script type="text/javascript" src = "atm.js"> </script>
+  </body>
+</html>

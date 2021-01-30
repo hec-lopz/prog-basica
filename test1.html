@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+  </head>
+  <body>
+    <p id="resultado">Este billete es de 50usd </p>
+    <script type="text/javascript">
+      var r = document.getElementById("resultado");
+      var img = document.createElement("IMG");
+      var p = document.createElement("P");
+
+      var billete = new Image();
+      billete.src = "50.jpg";
+
+      r.appendChild(img);
+      img.setAttribute("src",billete.src);
+
+      for(var i = 0; i < 5; i++)
+      {
+      p.appendChild(img);
+      document.body.appendChild(p)
+      }
+    </script>
+  </body>
+</html>
